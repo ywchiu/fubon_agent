@@ -2,6 +2,10 @@
 
  針對金融業場景的 AI Agent 開發實戰訓練，從基礎概念到企業級部署的完整課程。
 
+## 課程內容：
+### Day 1:
+- https://colab.research.google.com/drive/1JfjJ3Gd_4sz6-7QSr9RBEun7lkSRMv51?usp=sharing
+
 ## Day 1: AI Agent 導入與語音整合
 
 - AI Agent 核心概念與金融業應用場景

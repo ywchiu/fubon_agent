@@ -1,0 +1,31 @@
+version: "3.9"
+
+services:
+  finance:
+    build: .
+    command: ["python", "finance_server.py"]
+    ports:
+      - "8001:8001"
+    restart: unless-stopped
+
+  knowledge:
+    build: .
+    command: ["python", "knowledge_server.py"]
+    ports:
+      - "8002:8002"
+    restart: unless-stopped
+
+  gateway:
+    build: .
+    command: ["python", "gateway.py"]
+    environment:
+      # 注意：這裡用的是「service 名稱」finance / knowledge
+      FINANCE_URL: "http://finance:8001/mcp"
+      KNOWLEDGE_URL: "http://knowledge:8002/mcp"
+    ports:
+      - "9000:9000"
+    depends_on:
+      - finance
+      - knowledge
+    restart: unless-stopped
+

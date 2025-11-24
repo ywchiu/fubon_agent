@@ -9,6 +9,9 @@
 ### Day 2:
 - https://colab.research.google.com/drive/1j1_HO9j72Ldotasx-mog8g4GQ484BeUX?usp=sharing 
 
+### Day 3:
+- https://colab.research.google.com/drive/1rf102yOhPpmapZGOQEg5PLnuzYAmy-0a?usp=sharing
+
 ## Day 1: AI Agent 導入與語音整合
 
 - AI Agent 核心概念與金融業應用場景
